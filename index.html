@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tagda Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css"> <!-- CSS file -->
+</head>
+<body>
+  <!-- Header -->
+  <header id="header">
+    <div class="container nav-container">
+      <a href="#" class="logo">Port<span>folio</span></a>
+      <button id="darkToggle">🌙</button>
+
+      <div class="menu-btn"><i class="fas fa-bars"></i></div>
+      
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container hero-content">
+      <div class="hero-layout">
+        <div class="hero-img">
+          <img src="Screenshot 2024-10-07 232630.png" alt="Nikhil Singh">
+          <h3>Mr. Nikhil Singh</h3>
+        </div>
+        <div class="hero-text">
+          <h1>I am <span class="typing"></span></h1>
+          <p>A passionate Frontend Developer creating awesome and functional web experiences</p>
+          <a href="#projects" class="btn">View My Work</a>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <!--<section class="stats hidden">
+    <div class="stat"><span id="projectsCount">0</span><br>Projects</div>
+    <div class="stat"><span id="clientsCount">0</span><br>Clients</div>
+    <div class="stat"><span id="problemsCount">0</span><br>Problems Solved</div>
+  </section>-->
+
+  <!-- Skills Ticker -->
+  <div class="ticker-container">
+    <div class="ticker">
+      <span class="ticker-item">HTML5</span>
+      <span class="ticker-item">CSS3</span>
+      <span class="ticker-item">JavaScript</span>
+      <span class="ticker-item">ReactJS</span>
+      <span class="ticker-item">UI/UX Design</span>
+      <span class="ticker-item">Responsive Design</span>
+      <span class="ticker-item">Animation</span>
+      <span class="ticker-item">Web Performance</span>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <section class="about hidden" id="about">
+    <div class="container">
+      <div class="section-title"><h2>About Mr. Singh</h2></div>
+      <div class="about-content">
+        <div class="about-text">
+          <h3>I create amazing web experiences</h3>
+          <p>I'm a passionate frontend developer with over 2 years of experience...</p>
+          <p>My approach combines technical expertise with an eye for design...</p>
+        </div>
+        <div class="skills">
+          <div class="skill"><div class="skill-name"><span>HTML & CSS</span><span>95%</span></div><div class="skill-bar"><div class="skill-level" data-level="95"></div></div></div>
+          <div class="skill"><div class="skill-name"><span>JavaScript</span><span>85%</span></div><div class="skill-bar"><div class="skill-level" data-level="85"></div></div></div>
+          <div class="skill"><div class="skill-name"><span>React</span><span>80%</span></div><div class="skill-bar"><div class="skill-level" data-level="80"></div></div></div>
+          <div class="skill"><div class="skill-name"><span>UI/UX Design</span><span>75%</span></div><div class="skill-bar"><div class="skill-level" data-level="75"></div></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects hidden" id="projects">
+    <div class="container">
+      <div class="section-title"><h2>Mr. Singh’s Projects</h2></div>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-img"><video muted playsinline><source src="Screen Recording 2025-08-25 231804.mp4" type="video/mp4"></video></div>
+          <div class="project-info"><h3>E-Commerce Website</h3><p>This is a normal website, and it’s a clone of Salesforce...</p></div>
+        </div>
+        <div class="project-card">
+          <div class="project-img"><video muted playsinline><source src="Screen Recording 2025-08-25 225944.mp4" type="video/mp4"></video></div>
+          <div class="project-info"><h3>Animated Birthday wish</h3><p>It was my younger brother’s birthday, so I thought...</p></div>
+        </div>
+        <div class="project-card">
+          <div class="project-img"><video muted playsinline><source src="Screen Recording 2025-08-25 224804.mp4" type="video/mp4"></video></div>
+          <div class="project-info"><h3>Shopping Website</h3><p>A fully responsive e-commerce platform with so many products...</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact hidden" id="contact">
+    <div class="container">
+      <div class="section-title"><h2>Connect with Mr. Singh</h2></div>
+      <div class="contact-container">
+        <div class="contact-info">
+          <div class="info-item"><div class="info-icon"><i class="fas fa-map-marker-alt"></i></div><div><h3>Location</h3><p>Delhi, India</p></div></div>
+          <div class="info-item"><div class="info-icon"><i class="fas fa-envelope"></i></div><div><h3>Email</h3><p>ns440282@gmail.com</p></div></div>
+          <div class="info-item"><div class="info-icon"><i class="fas fa-phone"></i></div><div><h3>Phone</h3><p>+91 6205252052</p></div></div>
+        </div>
+        <div class="contact-form">
+          <form>
+            <div class="form-group"><input type="text" class="form-control" placeholder="Your Name" required></div>
+            <div class="form-group"><input type="email" class="form-control" placeholder="Your Email" required></div>
+            <div class="form-group"><input type="text" class="form-control" placeholder="Subject" required></div>
+            <div class="form-group"><textarea class="form-control" placeholder="Your Message" required></textarea></div>
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Overlay -->
+  <div class="video-overlay" id="videoOverlay"><video id="overlayVideo" muted controls></video></div>
+
+  <!-- Back to top -->
+  <button id="backToTop">⬆</button>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container"><p>&copy; 2025 Nikhil Singh's Portfolio. All Rights Reserved.</p></div>
+  </footer>
+
+  <script src="script.js"></script> <!-- JS file -->
+</body>
+</html>
