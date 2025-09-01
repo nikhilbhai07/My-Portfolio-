@@ -52,7 +52,7 @@ overlay.addEventListener("click", () => {
 });
 
 // Typing animation
-const texts = ["Frontend Developer", "JavaScript Enthusiast", "React Learner"];
+/*const texts = ["Frontend Developer", "JavaScript Enthusiast", "React Learner"];
 let i = 0, j = 0, isDeleting = false;
 function type() {
   const currentText = texts[i];
@@ -63,6 +63,33 @@ function type() {
   else if (isDeleting && j === 0) { isDeleting = false; i = (i + 1) % texts.length; }
   setTimeout(type, isDeleting ? 50: 250);
 }
+type();*/
+
+// Typing animation (fixed speed)
+const texts = ["Frontend Developer", "JavaScript Enthusiast", "React Learner"];
+let i = 0, j = 0, isDeleting = false;
+const speed = 150; // ek hi speed rakhi hai
+
+function type() {
+  const currentText = texts[i];
+  document.querySelector(".typing").textContent = isDeleting
+    ? currentText.substring(0, j--)
+    : currentText.substring(0, j++);
+
+  if (!isDeleting && j === currentText.length + 1) {
+    isDeleting = true;
+    setTimeout(type, 1000); // thoda rukne ke liye jab pura word aa jaye
+  } 
+  else if (isDeleting && j === 0) {
+    isDeleting = false;
+    i = (i + 1) % texts.length;
+    setTimeout(type, speed); // agle word ke liye normal speed
+  } 
+  else {
+    setTimeout(type, speed); // har step same speed
+  }
+}
+
 type();
 
 // Dark mode toggle
